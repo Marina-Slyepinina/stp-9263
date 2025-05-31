@@ -1,0 +1,300 @@
+
+
+.hero {
+   padding-top: 24px;
+   padding-bottom: 75px;
+    background-image: linear-gradient(180deg, rgba(4, 24, 29, 0) 0%, #04181d 100%), url(../img/hero/hero\ img\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 42% -20px;
+}
+
+
+.hero-img {
+    height: 210px;
+    transform: rotate(4deg);
+    background-image: url(../img/hero/hero\ img\ mob.png);
+    width: 100%;
+        max-width: 692px;
+        margin: 0 auto;
+  
+}
+
+.hero-content {
+    padding-top: 68px;
+    
+}
+
+.hero-title {
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    
+    font-size: 32px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: var(--accent);
+
+    padding-bottom: 40px;
+
+}
+
+.hero-button-style {
+    background: #634a2b;
+    border-radius: 15px;
+    padding: 3px;
+    width: 282px;
+    
+}
+
+.hero-button {
+    font-family: "Cinzel", sans-serif;;
+        font-size: 24px;
+   
+        font-weight: 700;
+            line-height: 0;
+            text-align: center;
+            color: #031317;
+            border-radius: 14px;
+            border: 1px solid var(--text);
+            width: 282px;
+            padding: 10px 20px;
+            
+            height: 53px;
+            background: linear-gradient(180deg, #ffd700 0%, #b7821f 100%);
+        }
+
+
+@media screen and (min-width: 1200px) {
+    .hero {
+            padding-top: 103px;
+            padding-bottom: 75px;
+            background-position: center;
+    
+        }
+
+        .hero-container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    
+        .hero-img {
+            width: 692px;
+            height: 334px;
+            background-image: url(../img/hero/hero\ img.png);
+            transform: none;
+            padding-top: 70px;
+        }
+    
+ 
+                .hero-wrapper {
+                    position: relative;
+                }
+        
+                .ellipse-shadow {
+                    position: absolute;
+                    width: 567px;
+                    height: 229px;
+                    background: rgba(2, 2, 2, 0.6);
+                    filter: blur(50px);
+                    border-radius: 50%;
+                    top: 37px;
+                    left: 173px;
+                    transform: translate(-50%, -50%);
+                    z-index: 0;
+                }
+        
+                .hero-title {
+                    position: relative;
+                    z-index: 1;
+                    font-size: 48px;
+                    padding-top: 0;
+                }
+    
+        .hero-button {
+            font-size: 36px;
+                width: 420px;
+                height: 67px;
+}
+}
+
+/* ============= cookie-style ================== */
+
+.hidden {
+    display: none !important;
+}
+
+.cookie-policy {
+    background: #fcfcfc;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 16px;
+   
+    font-family: "Noto Sans", sans-serif;
+}
+
+.cookie-text h2 {
+        font-weight: 600;
+        font-size: 32px;
+    
+        line-height: 1.5;
+        color: #000;
+        padding-bottom: 24px;
+}
+
+.cookie-text p {
+  
+        font-weight: 400;
+        font-size: 18px;
+  
+        line-height: 1.5;
+        color: #000;
+        padding-bottom: 60px;
+}
+
+.cookie-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.accept-btn,
+.decline-btn {
+    font-family: "Noto Sans", sans-serif;
+    padding: 16px 24px;
+        width: 288px;
+        height: 59px;
+        font-weight: 600;
+        line-height: 1.5;
+        font-size: 18px;
+        text-align: center;
+}
+
+.accept-btn {
+    background-color: #093d4a;
+    color: #fff;
+    border: none;
+
+}
+
+.decline-btn {
+    border: 2px solid #093d4a;
+    color: #000;
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+    .cookie-policy {
+        flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+            font-family: sans-serif;
+            flex-wrap: wrap;
+            padding: 62px 138px;
+        }
+    
+        .cookie-text h2 {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 1.5;
+                color: #000;
+                padding-bottom: 24px;
+        }
+    
+        .cookie-text p {
+                font-weight: 400;
+                font-size: 18px;
+          
+                line-height: 1.5;
+                color: #000;
+        }
+    
+        .cookie-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .accept-btn,
+        .decline-btn {
+            width: 258px;
+        }
+}
+
+/* ========== burger menu =========== */
+
+.burger-open {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    
+    
+}
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 620px;
+    background-color: #093d4a;
+    display: none;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+[data-visible="open"] {
+    display: flex;
+}
+
+.burger-header {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 16px;
+    padding-right: 16px;
+}
+
+.icon-close {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #fff;
+}
+
+.burger-nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 16px;
+}
+
+.burger-item {
+    padding-top: 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fef4e0;
+    color: #e5e7eb;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    font-family: "Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    
+        line-height: 1.5;
+        color: #fef4e0;
+}
+
+.burger-item:hover {
+    color: #ffffff;
+}
+
+@media screen and (min-width: 1200px){
+   .burger-open {
+    display: none;
+   }
+}
