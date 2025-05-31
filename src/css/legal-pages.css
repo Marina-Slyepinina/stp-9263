@@ -29,6 +29,10 @@
     height: 32px;
 }
 
+.legal-main-container {
+    padding: 0 18px;
+}
+
 .legal-title {
     font-weight: 700;
     font-size: 32px;
@@ -52,6 +56,44 @@
 
 .legal-list{
     margin-bottom: 60px;
+}
+
+.legal-list-item h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 22px;
+}
+
+.custom-list li::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%; 
+}
+
+.legal-list-item li {
+    position: relative;
+    padding-left: 22px;
+}
+
+.legal-list-item h3::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
 }
 
 .legal-list-item:not(:last-child) {
@@ -97,6 +139,40 @@
 
 .privacy-intro p {
     font-size: 18px;
+}
+
+.legal h2 {
+    font-size: 18px;
+}
+
+.custom-list li {
+    padding-left: 24px;
+}
+
+.custom-list li::before {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.legal-list-item h3 {
+    font-size: 14px;
+}
+
+.legal-list-item li {
+    position: relative;
+    padding-left: 22px;
+}
+
+.legal-list-item h3::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    width: 4px;
+    height: 4px;
+    background-color: black;
+    border-radius: 50%;
 }
 
 }
