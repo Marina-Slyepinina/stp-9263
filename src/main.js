@@ -1,2 +1,2 @@
-import './js/burgerMenu';
-import './js/hero'
+import './js/hero';
+import './js/header';
