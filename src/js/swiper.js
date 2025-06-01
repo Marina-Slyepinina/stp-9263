@@ -11,19 +11,24 @@ const swiper = new Swiper('.swiper', {
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+      renderBullet: function (index, className) {
+        return `<span class="${className}"></span>`;
+      },
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    0: {
-      spaceBetween: 14,
     },
-    1200: {
-      spaceBetween: 60,
-    },
-  }
+    breakpoints: {
+      0: {
+        spaceBetween: 14,
+      },
+      1200: {
+        spaceBetween: 60,
+      },
+    }
 });
   
+
+
 
