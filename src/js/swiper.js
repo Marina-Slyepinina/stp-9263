@@ -5,8 +5,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 
 const swiper = new Swiper('.swiper', {
-  modules: [Navigation, Pagination],
-    slidesPerView: 2.05,         
+  modules: [Navigation, Pagination],         
     centeredSlides: true,      
     loop: true,         
     pagination: {
@@ -22,9 +21,11 @@ const swiper = new Swiper('.swiper', {
     },
     breakpoints: {
       0: {
+        slidesPerView: 1.6, 
         spaceBetween: 14,
       },
       1200: {
+        slidesPerView: 2.05,
         spaceBetween: 60,
       },
     }
