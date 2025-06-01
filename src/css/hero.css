@@ -1,3 +1,6 @@
+.cookie-wrapper {
+    position: relative;
+}
 
 .hero-container {
    padding-top: 24px;
@@ -70,7 +73,7 @@
         background-image: linear-gradient(180deg, rgba(4, 24, 29, 0) 0%, #04181d 100%), url(../img/hero/hero_img_bg.png);
            background-position: bottom;
            padding-top: 70px;
-           padding-bottom: 107px;
+           padding-bottom: 167px;
         }
     
         .hero-img {
@@ -124,6 +127,12 @@
 }
 
 .cookie-policy {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
     background: #fcfcfc;
     display: flex;
     justify-content: space-between;
@@ -151,7 +160,6 @@
   
         line-height: 1.5;
         color: #000;
-        padding-bottom: 60px;
 }
 
 .cookie-buttons {
@@ -196,7 +204,7 @@
             border-bottom: 1px solid #e5e7eb;
             font-family: sans-serif;
             flex-wrap: wrap;
-            padding: 62px 138px;
+            padding: 62px 95px;
         }
     
         .cookie-text h2 {
