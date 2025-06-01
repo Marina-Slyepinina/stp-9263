@@ -5,6 +5,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 
 const swiper = new Swiper('.swiper', {
+  modules: [Navigation, Pagination],
     slidesPerView: 2.05,         
     centeredSlides: true,      
     loop: true,         
@@ -28,7 +29,3 @@ const swiper = new Swiper('.swiper', {
       },
     }
 });
-  
-
-
-
