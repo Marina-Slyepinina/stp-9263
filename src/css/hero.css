@@ -6,14 +6,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-
 }
 
 .hero-img {
     height: 210px;
     transform: rotate(4deg);
-    background-image: url(../img/hero/hero\ img\ mob.png);  
-  
+    background-image: url(../img/hero/hero_img_mob.png);
 }
 
 .hero-content {
@@ -61,7 +59,6 @@
 
 @media screen and (min-width: 1200px) {
     .hero {
-            padding-top: 103px;
             background-position: center;
     
         }
@@ -70,7 +67,7 @@
            display: flex;
            flex-direction: row-reverse;
            justify-content: space-between;
-           background-image: linear-gradient(180deg, rgba(4, 24, 29, 0) 0%, #04181d 100%), url(../img/hero/hero\ img\ bg.png);
+        background-image: linear-gradient(180deg, rgba(4, 24, 29, 0) 0%, #04181d 100%), url(../img/hero/hero_img_bg.png);
            background-position: bottom;
            padding-top: 70px;
            padding-bottom: 107px;
@@ -79,7 +76,7 @@
         .hero-img {
             width: 692px;
             height: 334px;
-            background-image: url(../img/hero/hero\ img.png);
+            background-image: url(../img/hero/hero_img.png);
             transform: none;
             padding-top: 70px;
         }
@@ -127,7 +124,6 @@
 }
 
 .cookie-policy {
-    
     background: #fcfcfc;
     display: flex;
     justify-content: space-between;
