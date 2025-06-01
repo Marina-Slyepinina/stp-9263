@@ -1,6 +1,5 @@
 
-
-.hero {
+.hero-container {
    padding-top: 24px;
    padding-bottom: 75px;
     background-image: linear-gradient(180deg, rgba(4, 24, 29, 0) 0%, #04181d 100%), url(../img/hero/hero\ img\ bg.png);
@@ -26,7 +25,7 @@
 }
 
 .hero-title {
-    font-family: "Cinzel", sans-serif;
+    font-family: var(--second-family);
     font-weight: 700;
     
     font-size: 32px;
@@ -47,13 +46,13 @@
 }
 
 .hero-button {
-    font-family: "Cinzel", sans-serif;;
+    font-family: var(--second-family);
         font-size: 24px;
    
         font-weight: 700;
             line-height: 0;
             text-align: center;
-            color: #031317;
+            color: var(--dark-background);
             border-radius: 14px;
             border: 1px solid var(--text);
             width: 282px;
@@ -132,7 +131,7 @@
     align-items: center;
     padding: 60px 16px;
    
-    font-family: "Noto Sans", sans-serif;
+    font-family: var(--font-family);
 }
 
 .cookie-text h2 {
@@ -162,7 +161,7 @@
 
 .accept-btn,
 .decline-btn {
-    font-family: "Noto Sans", sans-serif;
+    font-family: var(--font-family);
     padding: 16px 24px;
         width: 288px;
         height: 59px;
@@ -173,14 +172,14 @@
 }
 
 .accept-btn {
-    background-color: #093d4a;
+    background: var(--main-blue);
     color: #fff;
     border: none;
 
 }
 
 .decline-btn {
-    border: 2px solid #093d4a;
+    border: 2px solid var(--main-blue);
     color: #000;
 }
 
@@ -228,7 +227,7 @@
 }
 
 /* ========== burger menu =========== */
-
+/* 
 .burger-open {
     position: fixed;
     top: 16px;
@@ -297,4 +296,4 @@
    .burger-open {
     display: none;
    }
-}
+} */
