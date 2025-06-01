@@ -1,7 +1,13 @@
 <header class="header">
   <div class="container">
     <!-- Кнопка відкриття -->
-    <button data-action="open" class="burger-open" type="button">☰</button>
+    <button data-action="open" class="burger-open" type="button">
+      <button data-action="open" class="burger-open" type="button">
+        <svg class="" width="40" height="40">
+          <use href="./img/sprite.svg#burger"></use>
+        </svg>
+      </button>
+    </button>
 
     <div data-visible="close" id="burger-menu" class="burger-menu">
       <div class="burger-header">
@@ -11,19 +17,8 @@
           aria-label="Close menu"
           type="button"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon-close"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
+          <svg class="icon-close" fill="none" stroke="currentColor">
+            <use href="./img/sprite.svg#close"></use>
           </svg>
         </button>
       </div>
