@@ -15,7 +15,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
-  background-color: var(--blue);
+  background-color: var(--dark);
   color: var(--beige);
   font-family: var(--main-font-family);
 }

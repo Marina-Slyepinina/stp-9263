@@ -2,6 +2,10 @@
     display: none !important; 
 }
 
+.header .container {
+    background-color: var(--blue);
+}
+
 .burger-open {
     position: fixed;
     top: 16px;
