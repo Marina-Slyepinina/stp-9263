@@ -2,7 +2,6 @@
     padding: 46px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/how-to-play/how-to-play-bg-mob.png);
     background-size: cover; 
-    /* background-color: #fdfdfd; */
 }
 
 .how-to-play-title {
@@ -72,19 +71,57 @@
     color: #000;
 }
 
-/* .book-bg {
+.book-text-content-list {
     display: flex;
     flex-direction: column;
-    gap: 46px;
-} */
+}
 
-/* .text-left {
+@media only screen and (max-width: 1199px) {
 
-} */
+    .book-text-content-list {
+        gap: 12px;   
+    }
+    /* Фон половини книжки */
+    .text-left {
+        background-image: url(../img/how-to-play/book-mob-left.png);
+        height: 320px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 38px 0;
+        margin-bottom: 46px;
+    }
 
-/* .book-text-content-list {
-    width: 208px;
-} */
+    .text-rigth {
+        background-image: url(../img/how-to-play/book-mob-right.png);
+        height: 320px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .book-text-content {
+        position: relative;
+    }
+
+    .book-text-content-list {
+        width: 208px;
+        position: absolute;
+    }
+
+    .text-left .book-text-content-list {
+        top: 45px;
+        right: 0px;
+    }
+
+    .text-rigth .book-text-content-list {
+        top: 37px;
+        left: 19px;
+    }
+}
+
+
+
+
+
 
 /* .text-left .book-text-content-list {
     margin: 45px 10px 39px 0;
@@ -131,11 +168,10 @@
         width: 330px;
     }
 
-
-    .book-text-content-list{
+    /* .book-text-content-list{
         display: flex;
         flex-direction: column;
-    }
+    } */
 
     .text-left .book-text-content-list {
         gap: 22px;
