@@ -126,10 +126,9 @@
         border: none;
     }
 
-    .burger-item:hover {
+    .nav-link:hover {
         color: var(--dark);
     }
-
     .nav-link {
         text-decoration: none;
         color: var(--beige);
