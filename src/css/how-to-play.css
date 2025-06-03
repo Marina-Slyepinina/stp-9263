@@ -1,0 +1,188 @@
+.how-to-play .container {
+    padding: 46px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/how-to-play/how-to-play-bg-mob.png);
+    background-size: cover; 
+}
+
+.how-to-play-title {
+    font-family: var(--title-font-family);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 69px;
+
+    position: relative;
+    z-index: 1;
+}
+
+.how-to-play-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -16px;
+    width: 210px;
+    height: 5px;
+    background-color: #fdfdfd;
+    border-radius: 50% / 50%;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .how-to-play .container {
+        padding: 80px 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/how-to-play/how-to-play-bg-desk.png);
+        background-size: contain;
+    }
+
+    .how-to-play-title {
+        font-size: 36px;
+        margin-bottom: 69px;
+    }
+
+    .how-to-play-title::after {
+        width: 320px;
+        height: 5px;
+        bottom: -10px;
+    }
+}
+
+
+/* ---------- Book ---------- */
+.book-title {
+    font-family: "Cinzel", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 12px;
+    margin-left: 12px;
+}
+
+.book-text {
+    font-family: var(--title-font-family);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #000;
+}
+
+.book-text-content-list {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .book-text-content-list {
+        gap: 12px;   
+    }
+    /* Фон половини книжки */
+    .text-left {
+        background-image: url(../img/how-to-play/book-mob-left.png);
+        height: 320px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 38px 0;
+        margin-bottom: 46px;
+    }
+
+    .text-rigth {
+        background-image: url(../img/how-to-play/book-mob-right.png);
+        height: 320px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .book-text-content {
+        position: relative;
+    }
+
+    .book-text-content-list {
+        width: 208px;
+        position: absolute;
+    }
+
+    .text-left .book-text-content-list {
+        top: 45px;
+        right: 0px;
+    }
+
+    .text-rigth .book-text-content-list {
+        top: 37px;
+        left: 19px;
+    }
+}
+
+
+
+
+
+
+/* .text-left .book-text-content-list {
+    margin: 45px 10px 39px 0;
+} */
+
+/* .book-text-content-list {
+    width: 208px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+} */
+
+@media only screen and (min-width: 1200px) {    
+
+    .book-title {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+
+    .book-text {
+        font-size: 24px;
+    }
+
+    .book-bg {
+        background-image: url(../img/how-to-play/book-desk.png);
+        width: 936px;
+        height: 521px; 
+        margin: 0 auto;
+    }
+
+    .book-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: auto 85px;
+        height: 100%;
+        padding-top: 63px;
+    }
+
+    .text-left {
+        width: 308px;
+    }
+
+    .text-rigth {
+        width: 330px;
+    }
+
+    /* .book-text-content-list{
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .text-left .book-text-content-list {
+        gap: 22px;
+    }
+
+    .text-left {
+        margin-top: 9px;
+        margin-left: 58px;
+    }
+
+    .text-rigth .book-text-content-list {
+        gap: 15px;   
+    }
+}
