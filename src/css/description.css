@@ -1,0 +1,64 @@
+.description {
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+.description-header {
+    padding-bottom: 36px;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.description-title {
+    font-family: var(--title-font-family);
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: var(--beige);
+        text-align: center;
+}
+
+.smudge-svg-style {
+    margin-top: 6px;
+    width: 100%;
+    max-width: 200px;
+    height: 13px;
+    background: var(--beige);
+    filter: blur(2px);
+    clip-path: path("M102 4 C145 4 182 5 202 6.5 C182 8 145 9 102 9 C59 9 22 8 2 6.5 C22 5 59 4 102 4 Z");
+}
+
+
+.description-text {
+    background-image: url(../img/description/frame_img.png);
+    width: 286px;
+    height: 580px;
+    padding: 68px 41px 0 41px;
+    
+    font-family: var(--main-font-family);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--beige);
+}
+
+@media screen and (min-width: 1200px) {
+    .description {
+       padding-top: 80px;
+       padding-bottom: 80px;
+     
+    }
+
+        .description-title {
+            font-size: 36px;
+        }
+    
+    .description-text {
+        margin-left: 36px;
+        background-image: url(../img//description/Rectangle_291.png);
+        width: 1114px;
+        height: 636px;
+        font-size: 24px;
+        padding: 118px 173px 0 215px;
+    }
+}
