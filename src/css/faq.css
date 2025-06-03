@@ -52,9 +52,7 @@
     }
 }
 
-
-
-/* ---------- Accordion ---------- */
+/* #region ---------- Accordion ---------- */
 
 .accordion-container {
     width: 288px;
@@ -75,8 +73,7 @@
 .ac-trigger {
     border-radius: 18px !important;
     height: 48px !important;
-    padding: 0 20px 0 20px !important;
-
+    padding: 0 40px 0 20px !important;
     font-weight: 400 !important;
 }
 
@@ -90,12 +87,45 @@
 .ac-text {
     font-style: italic !important;
     font-weight: 300 !important;
-    padding: 0 20px 20px 20px !important;
+    padding: 0 40px 20px 20px !important;
 }
 
 .ac-header {
     background: transparent;
 }
+
+/* #region ----- custom toggle ----- */
+
+.ac-trigger::after {
+    display: none !important;
+    content: none !important;
+    background-image: none !important;
+}
+
+.ac-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    position: relative;
+}
+
+.toggle-icon {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+    fill: var(--beige);
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+
+.ac.is-active .toggle-icon {
+    transform: rotate(180deg);
+}
+/* #endregion */
+
 
 
 @media only screen and (min-width: 1200px) {    
@@ -121,4 +151,12 @@
         font-weight: 200 !important;
         font-size: 20px !important;
     }
+
+/* ----- custom toggle ----- */
+    .toggle-icon {
+        width: 40px;
+        height: 40px;
+        top: 20px;
+    }
 }
+/* #endregion ---------- Accordion ---------- */
