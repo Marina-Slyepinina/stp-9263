@@ -23,3 +23,11 @@ body {
 main {
   flex-grow: 1;
 }
+
+
+@media only screen and (min-width: 1200px) {
+  section {
+    scroll-margin-top: 103px; 
+  }
+}
+
