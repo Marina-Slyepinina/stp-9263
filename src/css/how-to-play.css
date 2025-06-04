@@ -2,6 +2,7 @@
     padding: 46px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/how-to-play/how-to-play-bg-mob.png);
     background-size: cover; 
+    text-align: center;
 }
 
 .how-to-play-title {
@@ -16,20 +17,22 @@
 
     position: relative;
     z-index: 1;
+    display: inline-block;
+    padding-bottom: 16px;
 }
 
 .how-to-play-title::after {
     content: '';
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -16px;
-    width: 210px;
-    height: 5px;
-    background-color: #fdfdfd;
-    border-radius: 50% / 50%;
-    filter: blur(4px);
-    z-index: -1;
+    left: -35px;
+    bottom: 0;
+    width: 240px;
+    height: 8px;
+    background: linear-gradient(90deg, #fdfdfd 0%, #fdfdfd 100%);
+    filter: blur(2px);
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 0;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -46,9 +49,9 @@
     }
 
     .how-to-play-title::after {
-        width: 320px;
-        height: 5px;
         bottom: -10px;
+        width: 384px;
+        left: -70px;
     }
 }
 
