@@ -1,20 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const policy = document.getElementById("cookie-policy");
-    const acceptBtn = document.querySelector(".accept-btn");
-    const declineBtn = document.querySelector(".decline-btn");
-  
-    // Показати вікно лише якщо ще не обрано
-    if (localStorage.getItem("cookiesAccepted") === null) {
-      policy.classList.remove("hidden");
-    }
-  
-    acceptBtn.addEventListener("click", () => {
-      localStorage.setItem("cookiesAccepted", "true");
-      policy.classList.add("hidden");
-    });
-  
-    declineBtn.addEventListener("click", () => {
-      localStorage.setItem("cookiesAccepted", "false");
-      policy.classList.add("hidden");
-    });
-  });
+  const policy = document.getElementById("cookie-policy");
+  const acceptBtn = document.querySelector(".accept-btn");
+  const declineBtn = document.querySelector(".decline-btn");
+
+  if (localStorage.getItem("cookiesAccepted") === null) {
+    policy.classList.remove("hidden");
+    document.body.classList.add("no-scroll");
+  }
+
+  const handleChoice = (accepted) => {
+    localStorage.setItem("cookiesAccepted", accepted ? "true" : "false");
+    policy.classList.add("hidden");
+    document.body.classList.remove("no-scroll");
+  };
+
+  acceptBtn.addEventListener("click", () => handleChoice(true));
+  declineBtn.addEventListener("click", () => handleChoice(false));
+});
