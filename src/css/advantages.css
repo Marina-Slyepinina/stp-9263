@@ -93,7 +93,7 @@
         padding-top: 80px;
         padding-bottom: 60px;
         background-image: linear-gradient(180deg, rgba(4, 24, 29, 0) 0%, #04181d 100%), url('../img/advantages/desktop_bg_8.png');
-        background-position: top left;
+        background-position: right;
         background-size: cover;
   }
 
@@ -113,7 +113,7 @@
         justify-content: center;
  }   
  
- /* .advantages-item.no-info {
-    background-color: transparent;
-} */
+ .advantages-item.no-info {
+border: none;
+}
 }
