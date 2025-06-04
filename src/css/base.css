@@ -4,7 +4,7 @@
   --beige: #fef4e0;
   --accent: #ffd700;
   --brown: #947526;
-
+ 
   --title-font-family: "Playfair Display", sans-serif;
   --main-font-family: "Noto Sans", sans-serif;
 }
@@ -15,7 +15,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
-  background-color: var(--blue);
+  background-color: var(--dark);
   color: var(--beige);
   font-family: var(--main-font-family);
 }
@@ -23,3 +23,11 @@ body {
 main {
   flex-grow: 1;
 }
+
+
+@media only screen and (min-width: 1200px) {
+  section {
+    scroll-margin-top: 103px; 
+  }
+}
+
