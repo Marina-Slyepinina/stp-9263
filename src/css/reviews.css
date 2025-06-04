@@ -1,9 +1,8 @@
 .container-reviews {
-    background-image: linear-gradient(180deg, rgba(4, 24, 29, 0.4) 0%, #04181d 100%), url('../img/reviews/reviews/mobile_bg_4.png');
-    
+    background-image: linear-gradient(180deg, rgba(4, 24, 29, 0.7) 0%, #04181d 100%), url('../img/reviews/reviews/mobile_bg_4.png');
+
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    background-position: top;
 }
 
 .section-features {
@@ -13,11 +12,11 @@
 
 .section-features h2 {
     font-family: var(--title-font-family);
-        font-weight: 600;
-        font-size: 24px;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: var(--beige);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--beige);
 
     position: relative;
     display: inline-block;
@@ -35,7 +34,7 @@
     filter: blur(2px);
     border-radius: 50%;
     opacity: 0.7;
-    z-index: -1;
+    z-index: 0;
 }
 
 .section-features-list {
@@ -61,25 +60,25 @@
 .feature-title {
     padding-bottom: 8px;
     font-family: var(--main-font-family);
-        font-weight: 600;
-        font-size: 16px;
+    font-weight: 600;
+    font-size: 16px;
 
-        line-height: 1.25;
-        text-transform: uppercase;
-        color: var(--beige);
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: var(--beige);
 }
 
 .feature-description {
     font-family: var(--main-font-family);
-        font-weight: 400;
-        font-size: 14px;
-        color: var(--beige);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--beige);
 }
 
 @media screen and (min-width: 1200px) {
     .container-reviews {
         background-image: linear-gradient(180deg, rgba(4, 24, 29, 0.4) 0%, #04181d 100%), url('../img/reviews/reviews/desktop_bg_1.png');
-        
+
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom left;
@@ -87,7 +86,7 @@
 
     .section-features {
         padding-top: 80px;
-        padding-bottom: 160px;
+        padding-bottom: 80px;
         text-align: center;
     }
 
@@ -96,18 +95,18 @@
 
     }
 
-.section-features-list {
-    padding-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
+    .section-features-list {
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
 
     .feature-item {
-       gap: 30px;
-       width: 450px;
-       
+        gap: 30px;
+        width: 450px;
+
     }
 
     .feature-content {
@@ -121,7 +120,7 @@
     .feature-description {
         font-size: 16px;
     }
-    
+
 }
 
 
@@ -131,15 +130,16 @@
     padding-top: 46px;
     padding-bottom: 46px;
     text-align: center;
+
 }
 
 .section-reviews h2 {
     font-family: var(--title-font-family);
-        font-weight: 600;
-        font-size: 24px;
-        letter-spacing: 0.02em;
-        text-align: center;
-        color: var(--beige);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--beige);
 
     position: relative;
     display: inline-block;
@@ -157,18 +157,18 @@
     filter: blur(2px);
     border-radius: 50%;
     opacity: 0.7;
-    z-index: -1;
+    z-index: 0;
 }
 
 .section-reviews-list {
     display: grid;
-        grid-template-columns: 1fr;
-        padding-top: 44px;
-        max-width: 100%;
-        width: 100%;
-        list-style: none;
-        padding-left: 0;
-  
+    grid-template-columns: 1fr;
+    padding-top: 44px;
+    max-width: 100%;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+
 }
 
 .review-item {
@@ -186,8 +186,8 @@
 
 .review-rating {
     display: flex;
-   flex-direction: column;
-   align-items: start;
+    flex-direction: column;
+    align-items: start;
 }
 
 .review-name {
@@ -211,8 +211,7 @@
 
 @media screen and (min-width: 1200px) {
     .section-reviews {
-        padding-top: 0;
-        padding-bottom: 71px;
+        padding: 80px 36px 71px 36px;
     }
 
     .section-reviews h2 {
@@ -221,14 +220,14 @@
 
     .section-reviews-list {
         grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
-       
+        gap: 24px;
+
     }
 
     .review-item {
         margin-bottom: 0;
     }
-    
+
     .review-name {
         font-size: 20px;
     }
@@ -236,5 +235,5 @@
     .review-text {
         font-size: 16px;
     }
-    
+
 }
