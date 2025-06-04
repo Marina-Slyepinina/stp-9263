@@ -1,0 +1,239 @@
+.container-reviews {
+    background-image: linear-gradient(180deg, rgba(4, 24, 29, 0.7) 0%, #04181d 100%), url('../img/reviews/reviews/mobile_bg_4.png');
+
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.section-features {
+    padding-top: 46px;
+    padding-bottom: 46px;
+}
+
+.section-features h2 {
+    font-family: var(--title-font-family);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--beige);
+
+    position: relative;
+    display: inline-block;
+    padding-bottom: 16px;
+}
+
+.section-features h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #fdfdfd 0%, #fdfdfd 100%);
+    filter: blur(2px);
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.section-features-list {
+    padding-top: 36px;
+}
+
+.feature-item {
+    width: 288px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: start;
+    background-color: transparent;
+    gap: 8px;
+}
+
+
+.feature-content {
+    flex: 1;
+    padding-bottom: 16px;
+}
+
+.feature-title {
+    padding-bottom: 8px;
+    font-family: var(--main-font-family);
+    font-weight: 600;
+    font-size: 16px;
+
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: var(--beige);
+}
+
+.feature-description {
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--beige);
+}
+
+@media screen and (min-width: 1200px) {
+    .container-reviews {
+        background-image: linear-gradient(180deg, rgba(4, 24, 29, 0.4) 0%, #04181d 100%), url('../img/reviews/reviews/desktop_bg_1.png');
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom left;
+    }
+
+    .section-features {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        text-align: center;
+    }
+
+    .section-features h2 {
+        font-size: 36px;
+
+    }
+
+    .section-features-list {
+        padding-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .feature-item {
+        gap: 30px;
+        width: 450px;
+
+    }
+
+    .feature-content {
+        width: 100%;
+    }
+
+    .feature-title {
+        font-size: 20px;
+    }
+
+    .feature-description {
+        font-size: 16px;
+    }
+
+}
+
+
+/* ============ reviews.css ============ */
+
+.section-reviews {
+    padding-top: 46px;
+    padding-bottom: 46px;
+    text-align: center;
+
+}
+
+.section-reviews h2 {
+    font-family: var(--title-font-family);
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--beige);
+
+    position: relative;
+    display: inline-block;
+    padding-bottom: 16px;
+}
+
+.section-reviews h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #fdfdfd 0%, #fdfdfd 100%);
+    filter: blur(2px);
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.section-reviews-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 44px;
+    max-width: 100%;
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.review-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 14px;
+
+    border-radius: 18px;
+    background: rgba(42, 42, 42, 0.3);
+    backdrop-filter: blur(35px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 24px;
+}
+
+.review-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.review-name {
+    font-family: var(--main-font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--beige);
+
+}
+
+.review-text {
+    padding-top: 14px;
+    font-family: var(--main-font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--beige);
+
+    text-align: left;
+}
+
+@media screen and (min-width: 1200px) {
+    .section-reviews {
+        padding: 80px 36px 71px 36px;
+    }
+
+    .section-reviews h2 {
+        font-size: 36px;
+    }
+
+    .section-reviews-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+    }
+
+    .review-item {
+        margin-bottom: 0;
+    }
+
+    .review-name {
+        font-size: 20px;
+    }
+
+    .review-text {
+        font-size: 16px;
+    }
+
+}
