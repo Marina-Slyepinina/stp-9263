@@ -90,7 +90,6 @@ const advantages = [
 
 const advantagesList = document.querySelector('.grid');
 
-
 const formattedAdvantages = advantages.map(item => {
   if (!item.title || !item.title.includes('<br>')) return item;
 
@@ -106,14 +105,11 @@ function renderAdvantages(items) {
   const markup = items
     .map(({ id, title, alt, description, image }) => {
       const isNoInfo = !title && !description;
-     
 
       if (isNoInfo && !isDesktop) return '';
-     
-      
 
       return `
-        <li class="advantages-item${isNoInfo ? 'no-info' : ''}">
+        <li class="advantages-item${isNoInfo ? ' no-info' : ''}">
           <img class="advantages-card-img"
             src="${image}" 
             alt="${alt}" 
@@ -132,7 +128,13 @@ function renderAdvantages(items) {
     })
     .join('');
 
-  advantagesList.insertAdjacentHTML('beforeend', markup);
+  advantagesList.innerHTML = markup;
 }
 
+// первинний рендер
 renderAdvantages(formattedAdvantages);
+
+// ререндер при зміні розміру екрана
+window.addEventListener('resize', () => {
+  renderAdvantages(formattedAdvantages);
+});
