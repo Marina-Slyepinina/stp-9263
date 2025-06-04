@@ -31,7 +31,6 @@
     color: var(--accent);
 
     padding-bottom: 40px;
-
 }
 
 .hero-button-style {
@@ -63,65 +62,66 @@
 @media screen and (min-width: 1200px) {
     .hero {
             background-position: center;
-    
         }
 
         .hero-container {
            display: flex;
            flex-direction: row-reverse;
-           justify-content: space-between;
-        background-image: linear-gradient(180deg, rgba(4, 24, 29, 0) 0%, #04181d 100%), url(../img/hero/hero_img_bg.png);
+           justify-content: center;
+           background-image: linear-gradient(180deg, rgba(4, 24, 29, 0) 0%, #04181d 100%), url(../img/hero/hero_img_bg.png);
            background-position: bottom;
-           padding-top: 70px;
+           background-repeat: no-repeat;
            padding-bottom: 167px;
         }
     
         .hero-img {
             width: 692px;
-            height: 334px;
+            height: 370px;
             background-image: url(../img/hero/hero_img.png);
             transform: none;
-            padding-top: 70px;
+
         }
     
  
-                .hero-wrapper {
-                    position: relative;
-                }
+        .hero-wrapper {
+            position: relative;
+        }
         
-                .ellipse-shadow {
-                    position: absolute;
-                    width: 567px;
-                    height: 229px;
-                    background: rgba(2, 2, 2, 0.6);
-                    filter: blur(50px);
-                    border-radius: 50%;
-                    top: 37px;
-                    left: 173px;
-                    transform: translate(-50%, -50%);
-                    z-index: 0;
-                }
+        .ellipse-shadow {
+            width: 567px;
+            position: absolute;
+            background: rgba(2, 2, 2, 0.6);
+            height: 229px;
+            border-radius: 50%;
+            filter: blur(50px);
+            left: 173px;
+            top: 37px;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+        }
         
-                .hero-title {
-                    position: relative;
-                    z-index: 1;
-                    font-size: 48px;
-                    padding-top: 0;
-                }
+        .hero-title {
+            z-index: 1;
+            position: relative;
+            padding-top: 0;
+            font-size: 48px;
+        }
     
         .hero-button {
             font-size: 36px;
-                width: 420px;
-                height: 67px;
-}
+            height: 67px;
+            width: 420px;
+        }
 
-.hero-button-style {
+    .hero-button-style {
     width: 420px;
-}
+    }
 }
 
 /* ============= cookie-style ================== */
-
+body.no-scroll {
+    overflow: hidden;
+}
 .hidden {
     display: none !important;
 }
