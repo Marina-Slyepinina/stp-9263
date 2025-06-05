@@ -224,8 +224,6 @@
         padding-top: 80px;
     }
 
-   
-
     .section-reviews h2 {
         font-size: 36px;
     }
@@ -233,6 +231,7 @@
     .section-reviews-list {
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
+        padding: 71px 36px 0 36px;
 
     }
 
