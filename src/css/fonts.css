@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Noto Sans';
-    src: url('../fonts/NotoSans-Italic-VariableFont_wdth\,wght.ttf') format('truetype');
+    src: url('../fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
     font-weight: 200 300;
     font-style: italic;
 }
