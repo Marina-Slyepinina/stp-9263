@@ -45,11 +45,10 @@
 
     .how-to-play-title {
         font-size: 36px;
-        margin-bottom: 69px;
+        margin-bottom: 52px;
     }
 
     .how-to-play-title::after {
-        bottom: -10px;
         width: 384px;
         left: -70px;
     }
