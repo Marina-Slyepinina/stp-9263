@@ -2,15 +2,28 @@
     display: none !important; 
 }
 
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+}
+
 .header-container {
     background-color: transparent;
     position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10000;
 }
 
 .burger-open {
     position: absolute;
     top: 16px;
     right: 16px;
+    backdrop-filter: blur(10px);
     background-color: transparent;
     border: none;
     stroke: var(--beige);
@@ -30,6 +43,7 @@
 
 [data-visible="open"] {
     display: flex;
+   
 }
 
 .burger-header {
@@ -81,14 +95,6 @@
 
     body {
         padding-top: 103px;   
-    }
-
-    .header {
-        position: fixed;
-        width: 100%;
-        z-index: 10000;
-        top: 0;
-        left: 0;   
     }
 
     .burger-open {
