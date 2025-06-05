@@ -2,6 +2,7 @@
     padding: 46px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/faq/faq-bg-mob.png);
     background-size: cover;
+    text-align: center;
 }
 
 .faq-title {
@@ -16,20 +17,22 @@
 
     position: relative;
     z-index: 1;
+    display: inline-block;
+    padding-bottom: 16px;
 }
 
 .faq-title::after {
     content: '';
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -16px;
-    width: 150px;
-    height: 5px;
-    background-color: #fdfdfd;
-    border-radius: 50% / 50%;
-    filter: blur(4px);
-    z-index: -1;
+    left: -60px;
+    bottom: 0;
+    width: 170px;
+    height: 8px;
+    background: linear-gradient(90deg, #fdfdfd 0%, #fdfdfd 100%);
+    filter: blur(2px);
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 0;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -47,8 +50,8 @@
     }
 
     .faq-title::after {
-        width: 274px;
-        height: 5px;
+        left: -85px;
+        width: 240px;
     }
 }
 

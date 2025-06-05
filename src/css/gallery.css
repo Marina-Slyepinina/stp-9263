@@ -1,6 +1,7 @@
 .gallery .container {
     background-image: url("../img/gallery/desktop_bg_8.png");
     background-size: cover;
+    text-align: center;
 }
 
 .gallery .container{
@@ -19,20 +20,22 @@
 
     position: relative;
     z-index: 1;
+    display: inline-block;
+    padding-bottom: 16px;
 }
 
 .gallery-title::after {
     content: '';
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -10px;
-    width: 156px;
-    height: 5px;
-    background-color: #fdfdfd;
-    border-radius: 50% / 50%;
-    filter: blur(4px);
-    z-index: -1; 
+    left: -35px;
+    bottom: 0;
+    width: 180px;
+    height: 8px;
+    background: linear-gradient(90deg, #fdfdfd 0%, #fdfdfd 100%);
+    filter: blur(2px);
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: 0;
 }
 
 .swiper-slide img {
@@ -111,7 +114,7 @@
     .gallery-title::after {
         bottom: -4px;
         width: 274px;
-        height: 5px;  
+        left: -55px;
     }
 
     .gallery-controls {
