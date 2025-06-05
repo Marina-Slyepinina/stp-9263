@@ -1,13 +1,31 @@
-.container-reviews {
-    background-image: linear-gradient(180deg, rgba(4, 24, 29, 0.7) 0%, #04181d 100%), url('../img/reviews/reviews/mobile_bg_4.png');
-
+/* === Головний контейнер, який охоплює обидві секції === */
+.background-wrapper {
+    background-image: linear-gradient(180deg, rgba(4, 24, 29, 0) 0%, #04181d 100%), url('../img/reviews/features/mobile_bg_3.png');
     background-repeat: no-repeat;
-    background-position: top;
-}
-
-.section-features {
+    background-size: cover;
+    background-position: center;
     padding-top: 46px;
     padding-bottom: 46px;
+}
+
+@media screen and (min-width: 1200px) {
+    .background-wrapper {
+        width: 1200px;
+        margin: 0 auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        background-image: linear-gradient(180deg, rgba(4, 24, 29, 0.6) 0%, #04181d 100%),
+            url('../img/reviews/reviews/desktop_bg_1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom left;
+    }
+}
+
+/* ============ features.css ============ */
+
+.section-features {
+    text-align: center;
 }
 
 .section-features h2 {
@@ -76,18 +94,11 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .container-reviews {
-        background-image: linear-gradient(180deg, rgba(4, 24, 29, 0.4) 0%, #04181d 100%), url('../img/reviews/reviews/desktop_bg_1.png');
 
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom left;
-    }
-
-    .section-features {
+    .container-features {
+        background-image: none;
         padding-top: 80px;
-        padding-bottom: 80px;
-        text-align: center;
+        padding-bottom: 80px;     
     }
 
     .section-features h2 {
@@ -127,11 +138,10 @@
 /* ============ reviews.css ============ */
 
 .section-reviews {
-    padding-top: 46px;
-    padding-bottom: 46px;
     text-align: center;
-
+    padding-top: 46px;
 }
+
 
 .section-reviews h2 {
     font-family: var(--title-font-family);
@@ -210,9 +220,12 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .section-reviews {
-        padding: 80px 36px 71px 36px;
+    .container-reviews {
+        background-image: none;
+        padding-top: 80px;
     }
+
+   
 
     .section-reviews h2 {
         font-size: 36px;
