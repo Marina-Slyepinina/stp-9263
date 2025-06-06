@@ -3,11 +3,10 @@
 }
 
 .header {
-    position: fixed;
-    width: 100%;
-    z-index: 10000;
-    top: 0;
-    left: 0;
+    position: sticky;
+        z-index: 2;
+        top: 0;
+        overflow: visible;
 }
 
 .header-container {
@@ -93,10 +92,6 @@
      padding-right: 0;
     }
 
-    body {
-        padding-top: 103px;   
-    }
-
     .burger-open {
         display: none;
     }
@@ -106,7 +101,7 @@
         position: static;
         display: flex !important;
         flex-direction: row;
-            height: 103px;
+        height: 103px;
         background: none;
         z-index: auto;
     }
